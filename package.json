@@ -1,12 +1,13 @@
 {
   "name": "forzen-network",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A simple Node network library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "example": "echo Example tasks:\necho npm run example-restserver",
+    "example": "echo Example tasks:\necho npm run example-restserver\necho npm run example-upload",
     "example-restserver": "tsc && node dist/examples/example-restserver.js",
+    "example-upload": "tsc && node dist/examples/example-upload.js",
     "pretty": "prettier --write .",
     "pretty-check": "prettier --check .",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
@@ -16,6 +17,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.21",
+    "@types/multer": "^1.4.11",
     "@types/node": "^20.11.25",
     "@types/sqlite3": "^3.1.11",
     "@typescript-eslint/eslint-plugin": "^7.1.1",
@@ -30,6 +32,7 @@
   },
   "dependencies": {
     "express": "^4.19.1",
+    "multer": "^1.4.5-lts.1",
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7"
   }
